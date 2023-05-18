@@ -1,0 +1,11 @@
+<?php
+define("BASE_URL","http://localhost/rlab/");
+define("HOST","localhost");
+define("USER","root");
+define("PASS","");
+define("DB","rlab");
+define("CHARSET","charset=utf8");
+define("TITLE","Refaccionaria");
+define("MONEDA","USD");
+define("CLIENT_ID","");
+?>
