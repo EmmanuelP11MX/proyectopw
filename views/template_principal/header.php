@@ -26,7 +26,9 @@
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="<?php echo BASE_URL;?>assets/css/fontawesome.min.css">
+
+    <!--Script para los iconos-->
+    <script src="https://kit.fontawesome.com/d84ef12f0e.js" crossorigin="anonymous"></script>
 
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>assets/css/slick.min.css">
@@ -85,7 +87,7 @@ https://templatemo.com/tm-559-zay-shop
                             <a class="nav-link" href="<?php echo BASE_URL . 'principal/about' ?>">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo BASE_URL . 'principal/shop' ?>">Tienda</a>
+                            <a class="nav-link" href="<?php echo BASE_URL . 'principal/shop/1' ?>">Tienda</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo BASE_URL . 'principal/contact' ?>">Contacto</a>
