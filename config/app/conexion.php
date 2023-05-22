@@ -16,5 +16,4 @@ class Conexion{
         return $this->conect;
     }
 }
- 
 ?>

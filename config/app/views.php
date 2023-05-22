@@ -1,5 +1,5 @@
 <?php
-class views{
+class Views{
 
     public function getView($ruta, $vista, $data="")
     {

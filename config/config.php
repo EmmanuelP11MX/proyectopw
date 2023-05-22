@@ -5,7 +5,7 @@ define("USER","root");
 define("PASS","");
 define("DB","rlab");
 define("CHARSET","charset=utf8");
-define("TITLE","Refaccionaria");
-define("MONEDA","USD");
+define("TITLE","RLAB");
+define("MONEDA","MXN");
 define("CLIENT_ID","");
 ?>

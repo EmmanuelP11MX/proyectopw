@@ -8,6 +8,9 @@ class Home extends Controller
     public function index()
     {
         $data['title'] = 'Pagina Principal';
+        $data['categoria'] = $this->model->getCategoria();
+        $data['nuevosProductos'] = $this->model->getNuevosProductos();
         $this->views->getView('home', "index", $data);
     }
 }
+?>

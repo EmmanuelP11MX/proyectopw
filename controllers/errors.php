@@ -10,3 +10,4 @@ class Errors extends Controller
         $this->views->getView('errors', "index");
     }
 }
+?>

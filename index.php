@@ -18,9 +18,9 @@ if (!empty($array[2])) {
         $parametro = trim($parametro, ",");
     }
 }
-require_once 'Config/App/Autoload.php';
-require_once 'Config/Helpers.php';
-$dirControllers = "Controllers/" . $controller . ".php";
+require_once 'config/app/autoload.php';
+require_once 'config/helpers.php';
+$dirControllers = "controllers/" . $controller . ".php";
 if (file_exists($dirControllers)) {
     require_once $dirControllers;
     $controller = new $controller();
@@ -30,6 +30,6 @@ if (file_exists($dirControllers)) {
         header('Location: '.BASE_URL.'errors');
     }
 } else {
-    header('Location: ' . BASE_URL . 'errors');
+    header('Location: ' .BASE_URL.'errors');
 }
 ?>
