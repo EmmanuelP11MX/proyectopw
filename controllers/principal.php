@@ -29,6 +29,8 @@ class Principal extends Controller
     public function detail($id_producto)
     {
         $data['producto'] = $this->model->getProducto($id_producto);
+        $id_categoria = $data['producto']['id_categoria'];
+        $data['relacionados'] = $this->model->getAleatorios($id_categoria, $data['producto']['id_producto']);
         $data['title'] = $data['producto']['nombre'];
         $this->views->getView('principal', "detail", $data);
     }
