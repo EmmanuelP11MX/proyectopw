@@ -23,23 +23,19 @@
     <link rel="stylesheet" href="<?php echo BASE_URL;?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL;?>assets/css/templatemo.css">
     <link rel="stylesheet" href="<?php echo BASE_URL;?>assets/css/custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
 
     <!--Script para los iconos-->
     <script src="https://kit.fontawesome.com/d84ef12f0e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>assets/css/slick.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>assets/css/slick-theme.css">
-<!--
-    
-TemplateMo 559 Zay Shop
 
-https://templatemo.com/tm-559-zay-shop
-
--->
 </head>
 
 <body>
@@ -110,9 +106,9 @@ https://templatemo.com/tm-559-zay-shop
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
-                    <i class="fas fa-solid fa-heart fa-beat text-dark mr-1"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
+                    <a class="nav-icon position-relative text-decoration-none" href="<?php echo BASE_URL . 'principal/deseo' ?>">
+                    <i class="fas fa-solid fa-heart fa-beat text-dark mr-1" ></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark" id="btnCantidadDeseo">0</span>
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>

@@ -97,6 +97,13 @@
     <script src="<?php echo BASE_URL;?>assets/js/jquery-1.11.0.min.js"></script>
     <script src="<?php echo BASE_URL;?>assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="<?php echo BASE_URL;?>assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="<?php echo BASE_URL;?>assets/js/sweetalert2.all.min.js"></script>
     <script src="<?php echo BASE_URL;?>assets/js/templatemo.js"></script>
     <script src="<?php echo BASE_URL;?>assets/js/custom.js"></script>
+    <script>
+        const base_url = '<?php echo BASE_URL;?>';
+    </script>
+    <script src="<?php echo BASE_URL;?>assets/js/carrito.js"></script>
     <!-- End Script -->
