@@ -3,7 +3,6 @@
     <!-- Start Content -->
     <div class="container py-5">
         <div class="row">
-
             <div class="col-lg-3">
                 <h1 class="h2 pb-4">Categories</h1>
                 <ul class="list-unstyled templatemo-accordion">
@@ -77,7 +76,7 @@
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white btnAddDeseo" href="#" prod="<?php echo $producto['id_producto'];?>"><i class="far fa-heart"></i></a></li>
                                         <li><a class="btn btn-success text-white mt-2" href="<?php echo BASE_URL . '/principal/detail/' . $producto['id_producto'];?>"><i class="fas fa-eye"></i></a></li>
-                                        <li><a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a></li>
+                                        <li><a class="btn btn-success text-white mt-2 btnAddCarrito" href="#" prod="<?php echo $producto['id_producto'];?>"><i class="fas fa-cart-plus"></i></a></li>
                                     </ul>
                                 </div>
                             </div>

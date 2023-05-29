@@ -28,12 +28,13 @@ function getListaDeseo(){
                     </td>
                     <td>
                         <button class="btn btn-danger btnEliminarDeseo" type="button" prod="${producto.id_producto}"><i class="fas fa-trash"></i></button>
-                        <button class="btn btn-success" type="button"><i class="fas fa-cart-plus"></i></button>
+                        <button class="btn btn-success btnAddCart" type="button" prod="${producto.id_producto}"><i class="fas fa-cart-plus"></i></button>
                     </td>
                 </tr>`;
             });
             tableLista.innerHTML = html;
             btnEliminarDeseo();
+            btnAgregarProducto();
         }
     }
 }
@@ -61,6 +62,17 @@ function eliminarListaDeseo(idProducto){
     Swal.fire(
         'Aviso?',
         'Producto eliminado de la lista de Deseos',
-        'seccess'
+        'success'
     )
+}
+//Agregar producto desde la lista de deseo
+function btnAgregarProducto() 
+{
+    let listaAgregar = document.querySelectorAll('.btnAddCart');
+    for (let i = 0; i < listaAgregar.length; i++) {
+        listaAgregar[i].addEventListener('click', function(){
+            let idProducto = listaAgregar[i].getAttribute('prod');
+            agregarCarrito(idProducto, 1, true);
+        })   
+    }
 }

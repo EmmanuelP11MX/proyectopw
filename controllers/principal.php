@@ -95,5 +95,29 @@ class Principal extends Controller
         echo json_encode($array, JSON_UNESCAPED_UNICODE);
         die();
     }
+    //obtener productos desde la lista carrito
+    public function listacarrito()
+    {
+        $datos = file_get_contents('php://input');
+        $json = json_decode($datos, true);
+        $array['productos'] = array();
+        $total = 0.00;
+        foreach ($json as $producto){
+            $result = $this->model->getProducto($producto['idProducto']);
+            $data['id_producto'] = $result['id_producto'];
+            $data['nombre'] = $result['nombre'];
+            $data['precio'] = $result['precio'];
+            $data['cantidad'] = $producto['cantidad'];
+            $data['imagen'] = $result['imagen'];
+            $subtotal = $result['precio'] * $producto['cantidad'];
+            $data['subTotal'] = number_format($subtotal, 2);
+            array_push($array['productos'], $data);
+            $total += $subtotal;
+        }
+        $array['total'] = number_format($total, 2);
+        $array['moneda'] = MONEDA;
+        echo json_encode($array, JSON_UNESCAPED_UNICODE);
+        die();
+    }
 }
 ?>
