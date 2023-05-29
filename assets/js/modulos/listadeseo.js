@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded',function() {
 })
 
 function getListaDeseo(){
-    const url = base_url + 'principal/listadeseo';
+    const url = base_url + 'principal/listaProductos';
     const http = new XMLHttpRequest();
     http.open('POST', url, true);
     http.send(JSON.stringify(listaDeseo));

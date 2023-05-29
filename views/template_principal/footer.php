@@ -7,7 +7,7 @@
             </div>
             <div class="modal-body">
                 <div class="table-responsive">
-                     <table class="table table-bordered table-striped table-hover align-middle " id="tableListaCarrito">
+                    <table class="table table-bordered table-striped table-hover align-middle " id="tableListaCarrito">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -19,21 +19,62 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
-                
             </div>
             <div class="modal-footer">
                 <h3 id="totalGeneral"></h3>
+                <a class="btn btn-outline-primary" href="<?php echo BASE_URL . 'cliente'; ?>">Realizar Pedido</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Login directo-->
+<div id='modalLogin' class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="titleLogin">Iniciar Sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body m-3">
+                <div class="text-center">
+                    <img class="img-thumbnail rounded-circle" src="<?php echo BASE_URL . 'assets/img/logo.png'; ?>" alt="" width="300">
+                </div>
+                <form method="get" action="">
+                    <div class="row">
+                        <div class="col-mb-12" id="frmLogin">
+                            <div class="form-group mb-3">
+                                <label for="correoLogin"><i class="fa-solid fa-envelope" style="color: #12681c;"></i> Correo</label>
+                                <input id="correoLogin" class="form-control" type="text" name="correoLogin" placeholder="Correo Electrónico">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="claveLogin"><i class="fa-solid fa-key" style="color: #12681c;"></i></i> Contraseña</label>
+                                <input id="claveLogin" class="form-control" type="password" name="claveLogin" placeholder="Contraseña">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Formulario de registro-->
+                    <div class="col-mb-12 d-none">
+                        <div class="form-group mb-3">
+                            <label for="nombreRegistro"><i class="fa-solid fa-user" style="color: #12681c;"></i> Nombre del cliente</label>
+                            <input id="nombreRegistro" class="form-control" type="text" name="nombreRegistro" placeholder="Nombre">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="correoRegistro"><i class="fa-solid fa-envelope" style="color: #12681c;"></i> Correo</label>
+                            <input id="correoRegistro" class="form-control" type="text" name="correoRegistro" placeholder="Correo Electrónico">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="claveRegistro"><i class="fa-solid fa-key" style="color: #12681c;"></i></i> Contraseña</label>
+                            <input id="claveRegistro" class="form-control" type="password" name="claveRegistro" placeholder="Contraseña">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="button">Login</button>
+                <button class="btn btn-success " type="button">Registrarse</button>
             </div>
         </div>
     </div>
