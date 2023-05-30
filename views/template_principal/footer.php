@@ -34,7 +34,7 @@
 <div id='modalLogin' class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header bg-primary text-white">
+            <div class="modal-header bg-success text-white">
                 <h5 class="modal-title" id="titleLogin">Iniciar Sesión</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -53,28 +53,44 @@
                                 <label for="claveLogin"><i class="fa-solid fa-key" style="color: #12681c;"></i></i> Contraseña</label>
                                 <input id="claveLogin" class="form-control" type="password" name="claveLogin" placeholder="Contraseña">
                             </div>
+                            <a href="#" id="btnRegister">No tienes una cuenta?</a>
+                            <div class="float-end">
+                                <button class="btn btn-success btn-lg" type="button" id="login">Login</button>
+                            </div>
                         </div>
                     </div>
                     <!--Formulario de registro-->
-                    <div class="col-mb-12 d-none">
+                    <div class="col-mb-12 d-none" id="frmRegister">
                         <div class="form-group mb-3">
-                            <label for="nombreRegistro"><i class="fa-solid fa-user" style="color: #12681c;"></i> Nombre del cliente</label>
-                            <input id="nombreRegistro" class="form-control" type="text" name="nombreRegistro" placeholder="Nombre">
+                            <label for="nombreRegistro"><i class="fa-solid fa-user" style="color: #12681c;"></i> Nombre(s) </label>
+                            <input id="nombreRegistro" class="form-control" type="text" name="nombreRegistro" placeholder="Nombre del cliente">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="p_apellidoRegistro"><i class="fa-regular fa-user" style="color: #12681c;"></i></i> Primer Apellido</label>
+                            <input id="p_apellidoRegistro" class="form-control" type="text" name="p_apellidoRegistro" placeholder="Primer Apellido del cliente">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="s_apellidoRegistro"><i class="fa-regular fa-user" style="color: #12681c;"></i></i> Segundo Apellido</label>
+                            <input id="s_apellidoRegistro" class="form-control" type="text" name="s_apellidoRegistro" placeholder="Segundo Apellido del cliente">
                         </div>
                         <div class="form-group mb-3">
                             <label for="correoRegistro"><i class="fa-solid fa-envelope" style="color: #12681c;"></i> Correo</label>
-                            <input id="correoRegistro" class="form-control" type="text" name="correoRegistro" placeholder="Correo Electrónico">
+                            <input id="correoRegistro" class="form-control" type="email" name="correoRegistro" placeholder="correo@gmail.com">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="telefonoRegistro"><i class="fa-solid fa-phone" style="color: #12681c;"></i> Telefono</label>
+                            <input id="telefonoRegistro" class="form-control" type="text" name="telefonoRegistro" placeholder="4448990001">
                         </div>
                         <div class="form-group mb-3">
                             <label for="claveRegistro"><i class="fa-solid fa-key" style="color: #12681c;"></i></i> Contraseña</label>
                             <input id="claveRegistro" class="form-control" type="password" name="claveRegistro" placeholder="Contraseña">
                         </div>
+                        <a href="#" id="btnLogin">Ya tienes una cuenta?</a>
+                        <div class="float-end">
+                            <button class="btn btn-success btn-lg" type="button" id="registrarse">Registrarse</button>
+                        </div>
                     </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" type="button">Login</button>
-                <button class="btn btn-success " type="button">Registrarse</button>
             </div>
         </div>
     </div>
@@ -187,4 +203,5 @@
     const base_url = '<?php echo BASE_URL; ?>';
 </script>
 <script src="<?php echo BASE_URL; ?>assets/js/carrito.js"></script>
+<script src="<?php echo BASE_URL; ?>assets/js/login.js"></script>
 <!-- End Script -->
