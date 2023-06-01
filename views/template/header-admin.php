@@ -55,7 +55,7 @@
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-tags"></i></div>
                                 Categorias
                             </a>
-                            <a class="nav-link" href="<?php echo BASE_URL . 'categoria';?>">
+                            <a class="nav-link" href="<?php echo BASE_URL . 'producto';?>">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-tag"></i></i></div>
                                 Productos
                             </a>

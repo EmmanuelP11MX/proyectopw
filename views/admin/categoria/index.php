@@ -1,6 +1,6 @@
 <?php include_once 'views/template/header-admin.php'; ?>
 <main>
-    <button class="btn btn-success" type="button" id="nuevo_registro"> Nuevo </button>
+    <button class="btn btn-success" type="button" id="nuevo_registro" style="margin: 10px;"> Nuevo </button>
     <div class="card">
         <div class="card-body">
             <div class="table-responsive">
