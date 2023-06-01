@@ -1,8 +1,9 @@
+<!--Modal del Carrito-->
 <div id='myModal' class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-            <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title"><i class="fas fa-cart-arrow-down"></i> Carrito</h5>
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title"><i class="fa-solid fa-cart-shopping"></i> Carrito</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -30,7 +31,8 @@
         </div>
     </div>
 </div>
-<!-- Login directo-->
+
+<!-- Modal del Login del cliente-->
 <div id='modalLogin' class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -95,6 +97,7 @@
         </div>
     </div>
 </div>
+
 <!-- Start Footer -->
 <footer class="bg-dark" id="tempaltemo_footer">
     <div class="container">

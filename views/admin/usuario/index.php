@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-
+    <!--Registro de usuarios-->
     <div id="nuevoModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -33,6 +33,7 @@
                 </div>
                 <form id="frmRegistro">
                     <div class="modal-body">
+                        <input type="hidden" id="id_usuario" name="id_usuario">
                         <div class="form-group">
                             <label for="nombre">Nombre(s)</label>
                             <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre(s)">
@@ -55,8 +56,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-success" type="submit">Registrar</button>
-                        <button class="btn btn-danger" type="buton" data-bs-dismiss="modal">Cancelar</button>
+                        <button class="btn btn-success" type="submit" id="btnAccion">Registrar</button>
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cancelar</button>
                     </div>
                 </form>
             </div>

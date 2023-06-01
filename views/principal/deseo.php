@@ -1,4 +1,4 @@
-<?php include_once 'views/template_principal/header.php'; ?>
+<?php include_once 'views/template/header-principal.php'; ?>
 
 <!-- Start Content -->
 <div class="container py-5">
@@ -38,7 +38,7 @@
 </div>
 <!-- End Content -->
 
-<?php include_once 'views/template_principal/footer.php' ?>
+<?php include_once 'views/template/footer-principal.php' ?>
 
 <script src="<?php echo BASE_URL . 'assets/js/modulos/listadeseo.js';?>"></script>
 

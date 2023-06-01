@@ -1,4 +1,4 @@
-    <?php include_once 'views/template_principal/header.php';?>
+    <?php include_once 'views/template/header-principal.php';?>
     
     <!-- Start Content -->
     <div class="container py-5">
@@ -239,7 +239,7 @@
     </section>
     <!--End Brands-->
     
-    <?php include_once 'views/template_principal/footer.php'?>
+    <?php include_once 'views/template/footer-principal.php'?>
 
 </body>
 
