@@ -1,4 +1,4 @@
-<?php include_once 'template_principal/header.php'?>
+<?php include_once 'views/template/header-principal.php'?>
 <!-- Start Banner Hero -->
     <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
@@ -144,4 +144,4 @@
         </div>
     </section>
     <!-- End Featured Product -->
-<?php include_once 'template_principal/footer.php'?>
+<?php include_once 'views/template/footer-principal.php'?>
