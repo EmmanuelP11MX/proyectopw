@@ -51,6 +51,14 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
                                 Usuarios
                             </a>
+                            <a class="nav-link" href="<?php echo BASE_URL . 'categoria';?>">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-tags"></i></div>
+                                Categorias
+                            </a>
+                            <a class="nav-link" href="<?php echo BASE_URL . 'categoria';?>">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-tag"></i></i></div>
+                                Productos
+                            </a>
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
