@@ -1,7 +1,7 @@
 <?php
 //header('Content-Type: application/json; charset=utf-8');
-include_once(_DIR_."/../admin/controllers/sistema.php");
-include_once(_DIR_."/../admin/controllers/categoria.php");
+include_once("/controllers/sistema.php");
+include_once("/controllers/categoria.php");
 
 $action = $_SERVER['REQUEST_METHOD'];
 $id =  isset($_GET['id']) ?  $_GET['id'] : null;
@@ -20,7 +20,7 @@ switch($action){
         $data = array();
         $request_body = file_get_contents('php://input');
         $data = json_decode($request_body, true);             
-          if (is_null($id)) {
+        if (is_null($id)) {
             $cantidad = $categoria->new($data);
             if ($cantidad !=0) {
                 $data['mensaje']='Se inserto el categoria.';

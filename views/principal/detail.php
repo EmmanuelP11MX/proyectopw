@@ -15,14 +15,6 @@
                         <div class="card-body">
                             <h1 class="h2"><?php echo $data['producto']['nombre'];?></h1>
                             <p class="h3 py-2"><?php echo MONEDA . ' ' . $data['producto']['precio'];?></p>
-                            <p class="py-2">
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-secondary"></i>
-                                <span class="list-inline-item text-dark">Rating 4.8 | 36 Comments</span>
-                            </p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <h6>Categoria:</h6>
@@ -34,26 +26,6 @@
 
                             <h6>Descripción:</h6>
                             <p><?php echo $data['producto']['descripcion'];?></p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <h6>Avaliable Color :</h6>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p class="text-muted"><strong>White / Black</strong></p>
-                                </li>
-                            </ul>
-
-                            <h6>Specification:</h6>
-                            <ul class="list-unstyled pb-3">
-                                <li>Lorem ipsum dolor sit</li>
-                                <li>Amet, consectetur</li>
-                                <li>Adipiscing elit,set</li>
-                                <li>Duis aute irure</li>
-                                <li>Ut enim ad minim</li>
-                                <li>Dolore magna aliqua</li>
-                                <li>Excepteur sint</li>
-                            </ul>
-
                             <form action="" method="GET">
                                 <input type="hidden" id="idProducto" value="<?php echo $data['producto']['id_producto'];?>">
                                 <div class="row">
@@ -110,26 +82,9 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <a href="<?php echo BASE_URL . '/principal/detail/' . $producto['id_producto'];?>" class="h3 text-decoration-none"><?php echo $producto['nombre'];?></a>
-                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                                <li>M/L/X/XL</li>
-                                <li class="pt-2">
-                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
-                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
-                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
-                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
-                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
-                                </li>
-                            </ul>
-                            <ul class="list-unstyled d-flex justify-content-center mb-1">
-                                <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
-                                </li>
-                            </ul>
+                            <center>
+                                <a href="<?php echo BASE_URL . '/principal/detail/' . $producto['id_producto'];?>" class="h3 text-decoration-none"><?php echo $producto['nombre'];?></a>
+                            </center>
                             <p class="text-center mb-0"><?php echo MONEDA . ' ' . $producto['precio'];?></p>
                         </div>
                     </div>

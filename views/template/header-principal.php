@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <title><?php echo TITLE . ' - ' . $data['title'];?></title>
+    <title><?php echo TITLE . ' - ' . $data['title']; ?></title>
 
     <!--icono de la pagina-->
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo BASE_URL;?>assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo BASE_URL;?>assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo BASE_URL;?>assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="<?php echo BASE_URL;?>assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="<?php echo BASE_URL;?>assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo BASE_URL; ?>assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo BASE_URL; ?>assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo BASE_URL; ?>assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?php echo BASE_URL; ?>assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="<?php echo BASE_URL; ?>assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!--fin del icono-->
@@ -17,12 +17,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="<?php echo BASE_URL;?>assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo BASE_URL;?>assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="<?php echo BASE_URL; ?>assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo BASE_URL; ?>assets/img/favicon.ico">
 
-    <link rel="stylesheet" href="<?php echo BASE_URL;?>assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo BASE_URL;?>assets/css/templatemo.css">
-    <link rel="stylesheet" href="<?php echo BASE_URL;?>assets/css/custom.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/templatemo.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/custom.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!-- Load fonts style after rendering the layout styles -->
@@ -33,8 +33,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
     <!-- Slick -->
-    <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>assets/css/slick.min.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/slick-theme.css">
 
 </head>
 
@@ -44,7 +44,7 @@
         <div class="container d-flex justify-content-between align-items-center">
 
             <a class="navbar-brand text-success logo h1 align-self-center" href="<?php echo BASE_URL . 'home/index' ?>">
-            <?php echo TITLE;?>
+                <?php echo TITLE; ?> <i class="fa-solid fa-tractor" style="color: #1a701e;"></i>
             </a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +55,7 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo BASE_URL . 'home/index' ?>">Home</a>
+                            <a class="nav-link" href="<?php echo BASE_URL . 'home/index' ?>">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo BASE_URL . 'principal/about' ?>">Servicios</a>
@@ -77,20 +77,17 @@
                             </div>
                         </div>
                     </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#" id="verCarrito">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark" id="btnCantidadCarrito">0</span>
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="<?php echo BASE_URL . 'principal/deseo' ?>">
-                    <i class="fas fa-solid fa-heart fa-beat text-dark mr-1" ></i>
+                        <i class="fas fa-solid fa-heart fa-beat text-dark mr-1"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark" id="btnCantidadDeseo">0</span>
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
                     </a>
                 </div>
             </div>

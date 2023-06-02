@@ -16,7 +16,7 @@ class Principal extends Controller
     public function shop($page)
     {
         $pagina = (empty($page)) ? 1 : $page;
-        $porPagina = 18;
+        $porPagina = 16;
         $desde = ($pagina - 1) * $porPagina;
         $data['title'] = 'Nuestro Productos';
         $data['producto'] = $this->model->getProductos($desde, $porPagina);
@@ -52,7 +52,7 @@ class Principal extends Controller
         }
 
         $pagina = (empty($page)) ? 1 : $page;
-        $porPagina = 6;
+        $porPagina = 12;
         $desde = ($pagina - 1) * $porPagina;
 
         $data['pagina'] = $pagina;
