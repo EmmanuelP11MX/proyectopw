@@ -26,6 +26,17 @@ class Usuario extends Controller
         echo json_encode($data);
         die();
     }
+    
+    public function mostrar($idUser)
+    {
+        $data = $this->model->getUsuario($idUser);
+        if (is_numeric($idUser)) {
+            echo json_encode($data);
+        } else {
+            echo json_encode(array('mensaje' => 'Usuario no encontrado'));
+        }
+        die();
+    }
 
     public function registrar()
     {
@@ -37,8 +48,7 @@ class Usuario extends Controller
             $correo = $_POST['correo'];
             $clave = $_POST['clave'];
             $hash = password_hash($clave, PASSWORD_DEFAULT);
-            if (empty($_POST['nombre']) || empty($_POST['p_apellido']) || empty($_POST['s_apellido']) || empty($_POST['correo'])) 
-            {
+            if (empty($_POST['nombre']) || empty($_POST['p_apellido']) || empty($_POST['s_apellido']) || empty($_POST['correo'])) {
                 $respuesta = array('msg' => 'Debes llenar todos los campos', 'icono' => 'warning');
             } else {
                 if (empty($id_usuario)) {
