@@ -16,7 +16,7 @@
     <div id="layoutAuthentication">
         <div id="layoutAuthentication_content">
             <main>
-                <div class="container py-5 h-100">
+                <div class="container py-5 h-90">
                     <div class="row d-flex justify-content-center align-items-center h-100">
                         <div class="col col-xl-10">
                             <div class="card" style="border-radius: 1rem;">
@@ -28,27 +28,18 @@
                                         <div class="card-body p-4 p-lg-5 text-black">
                                             <form id="formulario">
                                                 <div class="d-flex align-items-center mb-3 pb-1">
-                                                    <i class="fa-solid fa-tractor fa-2xl" style="color: #243e36;"></i>
                                                     <span class="h1 fw-bold mb-0"> Iniciar Sesión</span>
                                                 </div>
                                                 <div class="form-floating mb-3">
-                                                    <input class="form-control" id="email" type="email" name="email" value="pablo@gmail.com" placeholder="nombre@email.com"/>
+                                                    <input class="form-control" id="email" type="email" name="email" placeholder="nombre@email.com"/>
                                                     <label for="email">Correo Electronico</label>
                                                 </div>
                                                 <div class="form-floating mb-3">
-                                                    <input class="form-control" id="clave" type="password" name="clave" value="admin" placeholder="Contraseña"/>
+                                                    <input class="form-control" id="clave" type="password" name="clave" placeholder="Contraseña"/>
                                                     <label for="clave">Contraseña</label>
                                                 </div>
-                                                <div class="form-check mb-3">
-                                                    <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
-                                                    <label class="form-check-label" for="inputRememberPassword">Recordar Contraseña</label>
-                                                </div>
                                                 <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                    <a class="small" href="password.html">¿Olvidaste tu contraseña?</a>
                                                     <button type="submit" class="btn btn-success">Login</button>
-                                                </div>
-                                                <div class="card-footer text-center py-3">
-                                                    <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
                                                 </div>
                                             </form>
                                         </div>

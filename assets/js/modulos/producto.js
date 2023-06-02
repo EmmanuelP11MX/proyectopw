@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 });
 
-function eliminarCat(idCat) {
+function eliminarPro(idPro) {
     Swal.fire({
         title: 'Aviso?',
         text: "Estas seguro que quieres eliminar el registro!",
@@ -61,7 +61,7 @@ function eliminarCat(idCat) {
         confirmButtonText: 'Si, eliminarlo!'
     }).then((result) => {
         if (result.isConfirmed) {
-            const url = base_url + 'producto/delete/' + idCat;
+            const url = base_url + 'producto/delete/' + idPro;
             const http = new XMLHttpRequest();
             http.open('GET', url, true);
             http.send();
@@ -83,8 +83,8 @@ function eliminarCat(idCat) {
     })
 }
 
-function editarCat(idCat){
-    const url = base_url + 'producto/edit/' + idCat;
+function editarPro(idPro){
+    const url = base_url + 'producto/edit/' + idPro;
     const http = new XMLHttpRequest();
     http.open('GET', url, true);
     http.send();

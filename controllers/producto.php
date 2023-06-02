@@ -20,8 +20,8 @@ class Producto extends Controller
             $data[$i]['imagen'] = '<img class="img-thumbnail" src="'.$data[$i]['imagen'] .'" alt="'.$data[$i]['nombre'] .'" width="125">';
             $data[$i]['accion'] = '
             <div class="d-flex">
-                <button class="btn btn-primary" type="button" onclick="editarCat(' . $data[$i]['id_producto'] . ')"><i class="fas fa-edit"></i></button>
-                <button class="btn btn-danger" type="button" onclick="eliminarCat(' . $data[$i]['id_producto'] . ')"><i class="fas fa-trash"></i></button>
+                <button class="btn btn-primary" type="button" onclick="editarPro(' . $data[$i]['id_producto'] . ')"><i class="fas fa-edit"></i></button>
+                <button class="btn btn-danger" type="button" onclick="eliminarPro(' . $data[$i]['id_producto'] . ')"><i class="fas fa-trash"></i></button>
             </div>
         ';
         }

@@ -110,7 +110,7 @@ class Cliente extends Controller
         $verificar = $this->model->getToken($token);
         if (!empty($verificar)) {
             $this->model->actualizarVerify($verificar['id_cliente']);
-            header('location' . BASE_URL . 'cliente');
+            header('location: ' . BASE_URL . 'cliente');
         }
     }
 }
