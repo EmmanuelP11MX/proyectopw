@@ -31,8 +31,8 @@
                     <div class="card-body text-center">
                         <img class="img-thumbnail rounded-circle" src="<?php echo BASE_URL . 'assets/img/logo.png'; ?>" alt="" width="250">
                         <hr>
-                        <p><i class="fa-solid fa-user" style="color: #12681c;"></i> <?php echo $_SESSION['nombre']; ?></p>
-                        <p><i class="fa-solid fa-envelope" style="color: #12681c;"></i> <?php echo $_SESSION['correo']; ?></p>
+                        <p><i class="fa-solid fa-user" style="color: #12681c;"></i> <?php echo $_SESSION['nombreCliente']; ?></p>
+                        <p><i class="fa-solid fa-envelope" style="color: #12681c;"></i> <?php echo $_SESSION['correoCliente']; ?></p>
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">

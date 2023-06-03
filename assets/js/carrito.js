@@ -4,6 +4,10 @@ const btnDeseo = document.querySelector('#btnCantidadDeseo');
 const btnCarrito = document.querySelector('#btnCantidadCarrito');
 const verCarrito = document.querySelector('#verCarrito');
 const tableListaCarrito = document.querySelector('#tableListaCarrito tbody');
+
+//ver carrito
+const myModal = new bootstrap.Modal(document.getElementById('myModal'));
+
 let listaDeseo, listaCarrito;
 
 document.addEventListener('DOMContentLoaded',function() {
@@ -28,13 +32,11 @@ document.addEventListener('DOMContentLoaded',function() {
     cantidadDeseo();
     cantidadCarrito();
 
-    //ver carrito
-    var myModal = new bootstrap.Modal(document.getElementById('myModal'));
     verCarrito.addEventListener('click', function(){
         getListaCarrito();
         myModal.show();
     })
-})
+});
 //Agregar productos a la lista de deseos
 function agregarDeseo(idProducto){
     if (localStorage.getItem('listaDeseo') == null) {
