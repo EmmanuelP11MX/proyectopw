@@ -1,7 +1,8 @@
 <?php
 class Principal extends Controller
 {
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
         session_start();
     }
@@ -41,12 +42,12 @@ class Principal extends Controller
         $page = 1;
         $array = explode(',', $datos);
         if (isset($array[0])) {
-            if (!empty($array[0])){
+            if (!empty($array[0])) {
                 $id_categoria = $array[0];
             }
         }
         if (isset($array[1])) {
-            if (!empty($array[1])){
+            if (!empty($array[1])) {
                 $page = $array[1];
             }
         }
@@ -83,22 +84,25 @@ class Principal extends Controller
         $json = json_decode($datos, true);
         $array['productos'] = array();
         $total = 0.00;
-        foreach ($json as $producto){
-            $result = $this->model->getProducto($producto['idProducto']);
-            $data['id_producto'] = $result['id_producto'];
-            $data['nombre'] = $result['nombre'];
-            $data['precio'] = $result['precio'];
-            $data['cantidad'] = $producto['cantidad'];
-            $data['imagen'] = $result['imagen'];
-            $subtotal = $result['precio'] * $producto['cantidad'];
-            $data['subTotal'] = number_format($subtotal, 2);
-            array_push($array['productos'], $data);
-            $total += $subtotal;
+        if (!empty($json)) {
+            foreach ($json as $producto) {
+                $result = $this->model->getProducto($producto['idProducto']);
+                $data['id_producto'] = $result['id_producto'];
+                $data['nombre'] = $result['nombre'];
+                $data['precio'] = $result['precio'];
+                $data['cantidad'] = $producto['cantidad'];
+                $data['imagen'] = $result['imagen'];
+                $subtotal = $result['precio'] * $producto['cantidad'];
+                $data['subTotal'] = number_format($subtotal, 2);
+                array_push($array['productos'], $data);
+                $total += $subtotal;
+            }
         }
+
         $array['total'] = number_format($total, 2);
+        $array['totalPaypal'] = number_format($total, 2, '.', '');
         $array['moneda'] = MONEDA;
         echo json_encode($array, JSON_UNESCAPED_UNICODE);
         die();
     }
 }
-?>

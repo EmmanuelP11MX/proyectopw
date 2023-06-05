@@ -1,5 +1,6 @@
 <?php include_once 'views/template/header-admin.php'; ?>
 <main>
+<h1 style="text-align: center;"> Productos </h1>
     <div style="margin: 10px;">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">

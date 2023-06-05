@@ -32,6 +32,9 @@
     <script src="https://kit.fontawesome.com/d84ef12f0e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
+    <!-- Replace "test" with your own sandbox Business account app client ID -->
+    <script src="https://www.paypal.com/sdk/js?client-id=<?php echo CLIENT_ID; ?>&currency=<?php echo MONEDA; ?>"></script>
+
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/slick.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/slick-theme.css">
@@ -43,7 +46,7 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand text-success logo h1 align-self-center" href="<?php echo BASE_URL . 'home/index' ?>">
+            <a class="navbar-brand text-success logo h1 align-self-center" href="<?php echo BASE_URL ?>">
                 <?php echo TITLE; ?> <i class="fa-solid fa-tractor" style="color: #1a701e;"></i>
             </a>
 
@@ -55,7 +58,7 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo BASE_URL . 'home/index' ?>">Inicio</a>
+                            <a class="nav-link" href="<?php echo BASE_URL ?>">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo BASE_URL . 'principal/about' ?>">Servicios</a>
@@ -86,9 +89,21 @@
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark" id="btnCantidadDeseo">0</span>
                     </a>
                     <?php if (!empty($_SESSION['correoCliente'])) { ?>
-                        <a class="nav-icon position-relative text-decoration-none" href="<?php echo BASE_URL . 'cliente'?>">
-                            <img class="img-thumbnail" src="<?php echo BASE_URL . 'assets/img/clientes/default.png' ?>" alt="Logo cliente" width="50">
-                        </a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <p class="user-name mb-0"><?php echo $_SESSION['correoCliente']; ?></p>
+                                </li>
+                                <li>
+                                    <p class="designattion mb-0"><?php echo $_SESSION['nombreCliente']; ?></p>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="<?php echo BASE_URL . 'cliente/salir'; ?>">Logout</a></li>
+                            </ul>
+                        </li>
                     <?php } else { ?>
                         <a class="nav-icon position-relative text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">
                             <i class="fa fa-fw fa-user text-dark mr-3"></i>

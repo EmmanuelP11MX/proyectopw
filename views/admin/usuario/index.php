@@ -1,5 +1,6 @@
 <?php include_once 'views/template/header-admin.php'; ?>
 <main>
+    <h1 style="text-align: center;"> Usuarios </h1>
     <button class="btn btn-success" type="button" id="nuevo_registro" style="margin: 10px;"> Nuevo </button>
     <div class="card">
         <div class="card-body">

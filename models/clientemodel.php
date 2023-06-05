@@ -44,5 +44,37 @@ class ClienteModel extends Query
         $sql = "SELECT * FROM cliente WHERE correo = '$correo'";
         return $this->select($sql);
     }
+
+    public function registrarPedido($id_transaccion, $monto, $estado, $fecha, $email, $nombre, $apellido, $direccion, $ciudad, $email_user)
+    {
+        $sql = "INSERT INTO pedido (id_transaccion, monto, estado, fecha, email, nombre, apellido, direccion, ciudad, email_user) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $datos = array($id_transaccion, $monto, $estado, $fecha, $email, $nombre, $apellido, $direccion, $ciudad, $email_user);
+        $data = $this->insert($sql, $datos);
+        if ($data > 0) {
+            $res = $data;
+        } else {
+            $res = 0;
+        }
+        return $res;
+    }
+
+    public function getProducto($id_producto)
+    {
+        $sql = "SELECT * FROM producto WHERE id_producto = $id_producto";
+        return $this->select($sql);
+    }
+
+    public function registrarDetalle($producto, $precio, $cantidad, $id_pedido)
+    {
+        $sql = "INSERT INTO detalle_pedido (producto, precio, cantidad, id_pedido) VALUES (?, ?, ?, ?)";
+        $datos = array($producto, $precio, $cantidad, $id_pedido);
+        $data = $this->insert($sql, $datos);
+        if ($data > 0) {
+            $res = $data;
+        } else {
+            $res = 0;
+        }
+        return $res;
+    }
 }
 ?>

@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-lg-5 mt-5">
                     <div class="card mb-3">
-                        <img class="card-img img-fluid" src="<?php echo $data['producto']['imagen'];?>" alt="Card image cap" id="product-detail">
+                        <img class="card-img img-fluid" src="<?php echo BASE_URL . $data['producto']['imagen'];?>" alt="Card image cap" id="product-detail">
                     </div>
                 </div>
                 <!-- col end -->
@@ -42,9 +42,9 @@
                                     </div>
                                 </div>
                                 <div class="row pb-3">
-                                    <div class="col d-grid">
+                                    <!-- <div class="col d-grid">
                                         <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Comprar</button>
-                                    </div>
+                                    </div> -->
                                     <div class="col d-grid">
                                         <button type="button" class="btn btn-success btn-lg" id="btnAddCart" >Añadir</button>
                                     </div>

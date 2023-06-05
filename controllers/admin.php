@@ -38,7 +38,7 @@ class Admin extends Controller
 
     public function home(){
         $data['title'] = 'Panel Admin';
-        $this->views->getView('admin/administracion', "index", $data);
+        $this->views->getView('admin/usuario', "index", $data);
     }
 
     public function salir(){
